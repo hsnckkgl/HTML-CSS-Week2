@@ -18,12 +18,11 @@ img {
     flex-wrap: wrap;
     align-content: center;
     text-align: center;
+    justify-content: center;
 }
 .drone {
     padding: 10px;
     margin: 10px;
-
-
 
 }
 .drone1 {
@@ -54,12 +53,67 @@ img {
     background-color:bisque;
     width: 250px;
 }
-@media on screen (max-width: 400px) {
+@media screen and (max-width: 375px) {
+    img {
+      width: 100px;
+    }
     .drones {
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     }
     .drone1 {
-      width: 400px;
+      width: 100%;
     }
+    .drone2 {
+      width: 35%;
 
+    }
+    .drone3 {
+      width: 35%;
+    }
+    .drone4 {
+      width: 35%;
+    }
+    .drone5 {
+      width: 35%;
+
+    }
+    .drone6 {
+      width: 35%;
+    }
+    .drone7 {
+      width: 35%;
+    }
+}
+@media (min-width: 376px) and (max-width: 1024px) {
+    img {
+      width: 200px;
+    }
+    .drones {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .drone1 {
+      width: 45%;
+    }
+    .drone2 {
+      width: 45%;
+
+    }
+    .drone3 {
+      width: 28%;
+    }
+    .drone4 {
+      width: 28%;
+    }
+    .drone5 {
+      width: 28%;
+
+    }
+    .drone6 {
+      width: 28%;
+    }
+    .drone7 {
+      width: 28%;
+    }
 }
